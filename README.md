@@ -17,7 +17,7 @@ Credit: Nintendo, Game Freak, Creature Inc., TPCi Original
 
 Composition: Junichi Masuda, Gō Ichinose, Morikazu Aoki
 
-Original Designer : Ken Sugimori
+Original Designer: Ken Sugimori
 
 **All music and content included within this game/site is owned by the respective artists and no copyright infringement is intended. 
 Only used to test my knowledge of the programming languages.**
