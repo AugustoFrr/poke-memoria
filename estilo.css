@@ -1,0 +1,189 @@
+body {
+    background-image: linear-gradient(125deg, #fcf2be, #fff4b6, #faeda1);
+    background-size: 400% 400%;
+    animation: bganimation 8s infinite;
+}
+
+#game {
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    left: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#painel {
+    visibility: hidden;
+    text-align: center;
+    position: absolute;
+    width: 200px;
+    padding: 10px;
+    bottom: 5px;
+    left: 5px;
+    color: white;
+    border-radius: 10px;
+    background-color: #333333;
+    opacity: 0.9;
+    border: 3px solid rgb(112, 226, 255);
+}
+
+.cardEasy {
+    position: relative;
+    width: 13.80%;
+    height: 23%;
+    background: none;
+    min-width: 80px;
+    float: left;
+    margin-left: 2.44%;
+    margin-bottom: 5%;
+}
+
+.cardMedium {
+    position: relative;
+    width: 10.05%;
+    height: 18%;
+    background: none;
+    min-width: 100px;
+    float: left;
+    margin-left: 2.44%;
+    margin-bottom: 5%;
+}
+
+.cardHard {
+    position: relative;
+    width: 10.05%;
+    height: 13%;
+    background: none;
+    min-width: 80px;
+    float: left;
+    margin-left: 2.44%;
+    margin-bottom: 5%;
+}
+
+.thecard {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+.thefront {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #333333;
+    border: 5px solid rgb(112, 226, 255);
+}
+
+.theback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fafafa;
+    color: #333;
+    border: 5px solid rgb(153, 0, 255);
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.image {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.menu {
+    margin-top: 5%;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@keyframes bganimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-webkit-keyframes bganimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes bganimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-o-keyframes bganimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-ms-keyframes bganimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

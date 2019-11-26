@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogo da memória Pokémon!</title>
+    <link rel="icon" href="./mons/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+
+<body>
+    <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <audio src="sounds/indexSound.mp3" id="indexSound" type="audio/mpeg" loop></audio>
+    <audio src="sounds/flip.mp3" id="flipSound" type="audio/mpeg"></audio>
+    <audio src="sounds/match.mp3" id="matchSound" type="audio/mpeg"></audio>
+
+    <div id="painel">
+        <h3 id="crono">Já!</h3>
+        <a class="btn btn-outline-light" onclick="window.location.reload(false)">Voltar</a>
+    </div>
+
+    <div id="game"></div>
+
+    <div class="container vertical-center">
+        <div class="row">
+            <div class="col">
+
+                <div id="logo" class="d-flex justify-content-center mb-2">
+                    <img src="./mons/logo.png" style="width: 40%;" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center mb-2">
+            <div class="col-4">
+                <div id="menu">
+                    <select name="select" class="form-control" id="selectId">
+                        <option value="Easy">Easy</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <button id="botao" class="btn btn-success btn-lg" onclick="startGame()">Start!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
