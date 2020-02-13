@@ -1,7 +1,7 @@
 ## Jogo da Poké-Memória
 Um simples jogo da memórias estrelando diversos pokémon!
 
-**[Clique aqui para jogar!](http://www.augustofrr.ga/poke-memoria/)**
+**[Clique aqui para jogar!](http://augustofrr.com/poke-memoria/)**
 
 Jogo criado utilizando HTML, CSS e JavaScript.
 
